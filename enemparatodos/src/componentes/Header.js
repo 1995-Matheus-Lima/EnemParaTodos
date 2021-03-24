@@ -3,9 +3,11 @@ import '../index.css';
 
 const Header = () => {
   return (
-    <div className="HeaderMenu">
-      <h1>Enem para todos</h1>
-    </div>
+    <>
+      <div className="HeaderMenu">
+        <h1>Enem para todos</h1>
+      </div>
+    </>
   )
 }
 
