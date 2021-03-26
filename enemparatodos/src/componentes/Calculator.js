@@ -18,7 +18,6 @@ const Calculator = () => {
       if (isNaN(item) || (item < 0 ) ){
         status = false
       }
-    console.log(status);
     setPesoCorreto(status)
     })
   }, [pesos,pesoCorreto])
