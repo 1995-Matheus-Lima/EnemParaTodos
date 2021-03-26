@@ -242,11 +242,13 @@ table {
 }
 .FormCalculator input {
   height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
 }
 .FormCalculator button,
 .FormCalculator .Resultado {
   background-color: #255954;
-  width: 40%;
+  width: 50%;
   padding: 10px 20px;
   margin-top: 10px;
   border-radius: 5px;
@@ -262,7 +264,8 @@ table {
   cursor: pointer;
 }
 .FormCalculator .Resultado {
-  width: 20%;
+  width: 30%;
   color: #212226;
   background-color: #71d99e;
+  text-align: center;
 }
