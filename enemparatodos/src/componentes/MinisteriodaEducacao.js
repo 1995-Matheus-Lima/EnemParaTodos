@@ -23,7 +23,7 @@ const MinisteriodaEducacao = () => {
       link:"https://enem.inep.gov.br/participante/#!/"
     },
     {
-      nome:"Provas Antigas",
+      nome:"Provas Antigas Enem",
       link:"http://portal.inep.gov.br/provas-e-gabaritos"
     }
   ]

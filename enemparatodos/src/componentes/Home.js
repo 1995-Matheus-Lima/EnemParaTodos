@@ -1,19 +1,19 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Calculator from './Calculator'
+import ConhecimentoDeMundo from './ConhecimentoDeMundo'
 import DicasDeEstudos from './DicasDeEstudos'
 import MinisteriodaEducacao from './MinisteriodaEducacao'
 
 const Home = () => {
+  const title = document.querySelector('title')
+  title.innerText = 'E.P.T | HOME'
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route/>
-      </Routes>
+    <div>
       <MinisteriodaEducacao/>
+      <ConhecimentoDeMundo/>
       <DicasDeEstudos/>
       <Calculator />
-    </BrowserRouter>
+    </div>
   )
 }
 
