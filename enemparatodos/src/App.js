@@ -10,14 +10,15 @@ import PaginaNaoEncontrada from './componentes/PaginaNaoEncontrada';
 const App = () => {
   return (
     <div className="principal">
-      <Header/>
       <BrowserRouter>
+      <Header/>
         <Routes>
+          <Route path='/Disciplinas/:disciplina'/>
           <Route path='/' element={<Home/>}/>
           <Route path='*' element={<PaginaNaoEncontrada/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
-      <Footer/>
     </div>
   )
 }

@@ -146,13 +146,15 @@ table {
   align-items: center;
 }
 .HeaderMenu h1 {
-  color: #fff;
   text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.1em;
   font-size: 30px;
 }
-
+.HeaderMenu a {
+  color: #fff;
+  text-decoration: none;
+}
 /* ------------------- foooter --------------- */
 
 .FooterStyle {
@@ -203,7 +205,7 @@ table {
 .containerHome {
   display: block;
   max-width: 940px;
-  margin: 0 auto 20px auto;
+  margin: 20px auto;
   padding-top: 20px;
 }
 .containerHome h1 {
@@ -295,7 +297,7 @@ table {
   background-color: #3a8c7d;
   border-radius: 2%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.1em;
@@ -303,6 +305,31 @@ table {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .LinksExternosHomeCss a:hover {
+  background-color: #71d99e;
+  color: #212226;
+  cursor: pointer;
+}
+/*---------------Link internos-----------------------*/
+.linksInternosCss {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.linksInternosCss a {
+  min-width: 30%;
+  text-align: center;
+  text-decoration: none;
+  background-color: #3a8c7d;
+  border-radius: 2%;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.linksInternosCss a:hover {
   background-color: #71d99e;
   color: #212226;
   cursor: pointer;
