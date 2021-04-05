@@ -5,6 +5,7 @@ import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './componentes/Home';
 import PaginaNaoEncontrada from './componentes/PaginaNaoEncontrada';
+import Matematica from './componentes/Matematica/Matematica';
 
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
       <BrowserRouter>
       <Header/>
         <Routes>
-          <Route path='/Disciplinas/:disciplina'/>
+          <Route path='/Disciplinas/Matematica/*' element={<Matematica/>}/>
           <Route path='/' element={<Home/>}/>
           <Route path='*' element={<PaginaNaoEncontrada/>}/>
         </Routes>
