@@ -290,7 +290,14 @@ table {
   background-color: #71d99e;
   text-align: center;
 }
-
+#valorInvalido {
+  background-color: #ff0000;
+  color: #fff;
+}
+.InfoChecarValor {
+  padding: 10px;
+  font-size: 1.125em;
+}
 /* ------------- Links externos Home ----------------- */
 .LinksExternosHomeCss {
   display: flex;

@@ -8,14 +8,14 @@ const Calculator = () => {
   const [matematica, setMatematica] = React.useState(0)
   const [redacao, setRedacao] = React.useState(0)
   const [pesos, setPesos] = React.useState([1,1,1,1,1])
-  const [notaCorreta, setNotaCorreta] = React.useState(true)
-  const [pesoCorreto, setPesoCorreto] = React.useState(true)
+  const [pesoCorreto, setPesoCorreto] = React.useState(false)
   const [media, setMedia] = React.useState( '000.000') 
+  const [pCheck, setPcheck] = React.useState('')
 
   React.useEffect(() => {
     var status = true
     pesos.forEach((item)=>{
-      if (isNaN(item) || (item < 0 ) ){
+      if (isNaN(item) || (item <= 0 ) ){
         status = false
       }
     setPesoCorreto(status)
@@ -23,8 +23,16 @@ const Calculator = () => {
   }, [pesos,pesoCorreto])
 
   const handleChange = (Response,func) => {
-    func(Response.value)
+    func(+Response.value)
+    if (+Response.value < 0 ){
+      Response.id = 'valorInvalido'
+    }
+    else{
+      Response.id = ""
+    }
+
   }
+  
   const setPesosInput = (target,index) =>{
     const newArray = []
     pesos.map((valor,i) => {
@@ -33,6 +41,12 @@ const Calculator = () => {
       }
       else{
         newArray.push(valor)
+      }
+      if (target.value <= 0 ){
+        target.id = 'valorInvalido' 
+      }
+      else{
+        target.id = ""
       }
       return 0
     })
@@ -50,14 +64,23 @@ const Calculator = () => {
     const mediaFinal = (somaNota/somaPeso).toFixed(3)
     setMedia(mediaFinal)
   }
-  const simularNota = ( event ) => {
-    event.preventDefault();
-    notas.forEach((nota) => {if (nota < 0 ){setNotaCorreta(false)}} )
 
-    if( notaCorreta && pesoCorreto){
-      showNota()
+
+  const simularNota = ( event ) => {
+    let count = 0
+    event.preventDefault();
+    notas.forEach(nota => {if(nota < 0){ count +=1 }})
+    console.log(count)
+   
+    if( (count === 0) && pesoCorreto){
+      showNota();   
+    }else{
+      setMedia('000.000')
+      setPcheck("Verifique se os valores inseridos estão corretos... ")
+      setTimeout(() => {
+        setPcheck(null)
+      }, 3000);
     }
-    
   } 
   
   return (
@@ -100,6 +123,7 @@ const Calculator = () => {
             </tbody>
           </table>
           <button type='submit' onClick={simularNota}>Simular Nota</button>
+          <p className='InfoChecarValor'>{pCheck}</p>
           <div className="Resultado">
             <p>Média: {media}</p>
           </div>
