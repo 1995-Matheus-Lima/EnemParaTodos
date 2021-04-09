@@ -96,6 +96,9 @@ a {
   text-decoration: none;
   color: currentColor;
 }
+link {
+  width: 100%;
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -356,17 +359,18 @@ table {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
-.ShowAulas p {
+.ShowAulas p,
+.ShowAulas a {
   text-transform: uppercase;
   padding: 5px 0;
   text-align: center;
   width: 100%;
   background-color: chartreuse;
 }
-.ShowAulas p:nth-child(odd) {
+.ShowAulas a:nth-child(odd) {
   background-color: #71d99e;
 }
-.ShowAulas p:nth-child(even) {
+.ShowAulas a:nth-child(even) {
   background-color: #3a8c7d;
   color: #fff;
 }
@@ -377,4 +381,59 @@ table {
   width: 200px;
   height: 200px;
   border: 10px solid #71d99e;
+}
+/*--------------- ShowVideo ---------------*/
+.Videos {
+  border: 2px solid #1e4040;
+  padding: 0px;
+}
+.Videos h2 {
+  display: block;
+  margin: 10px auto;
+  width: 90%;
+  text-align: center;
+  background-color: #1e4040;
+  color: #fff;
+  padding: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.Videos h3 {
+  display: block;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  background-color: #71d99e;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.YoutubeVideos {
+  width: 80%;
+  display: block;
+  margin: 20px auto;
+  background-color: #71d99e;
+  border: 2px solid #71d99e;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.Videos a {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+  width: 60%;
+  padding: 7px 0px;
+  text-align: center;
+  margin-left: 30%;
+  background-color: #71d99e;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.Videos a:hover {
+  background-color: #212226;
+  color: #fff;
 }

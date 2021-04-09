@@ -1,6 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const ShowAulas = ({Aulas}) => {
+const ShowAulas = ({Aulas  , setVideos}) => {
+  const DefineAulas = (conteudo) => {
+    setVideos(conteudo)
+  }
 
   return (
     <div className={"ShowAulas"}>
@@ -10,9 +14,9 @@ const ShowAulas = ({Aulas}) => {
             <h3>{aula.Subtitulo}</h3>
             {aula.Conteudo.map((Conteudo, index) =>{
               return(
-                <p key={index}>
-                  {<a>{Conteudo.nome}</a>}
-                </p>
+                
+                  <Link key={index} to={`/Disciplinas/Matematica/MatematicaBasica/${Conteudo.id}`} onClick={()=>{DefineAulas(Conteudo)}}>{Conteudo.nome}</Link>
+             
               )
             })}
           </div>

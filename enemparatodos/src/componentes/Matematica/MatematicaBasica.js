@@ -1,8 +1,11 @@
 import React from 'react'
+import { Route, Routes } from 'react-router';
 import ShowAulas from '../ShowAulas';
+import ShowVideos from '../ShowVideos';
+
 
 const MatematicaBasica = () => {
-  const [mostrarAulas, setmostrarAulas] = React.useState(true)
+  const [Videos, setVideos] = React.useState({});
   const Algebra = {
     Subtitulo:"Álgebra",
     Conteudo:[{
@@ -11,11 +14,13 @@ const MatematicaBasica = () => {
       videos:[
         {
           nome:"Professor Ferreto: Adição",
-          href:"https://www.youtube.com/watch?v=az6OYFS7AUA"
+          acessoKey:"az6OYFS7AUA",
+          href:"https://www.youtube.com/watch?v=az6OYFS7AUA&t=6s"
         },
         {
           nome:"Professor Marcos Aba: Adição para crianças",
-          href:"https://www.youtube.com/watch?v=HdbZqAXQm3o",
+          acessoKey:"HdbZqAXQm3o",
+          href:"https://youtu.be/HdbZqAXQm3o"
         },
       ]
     },
@@ -25,11 +30,13 @@ const MatematicaBasica = () => {
       videos:[
         {
           nome:"Professor Ferreto: Adição",
-          href:"https://www.youtube.com/watch?v=az6OYFS7AUA"
+          acessoKey:"az6OYFS7AUA",
+          href:"https://www.youtube.com/watch?v=az6OYFS7AUA&t=6s"
         },
         {
           nome:"Professor Marcos Aba: Adição para crianças",
-          href:"https://www.youtube.com/watch?v=HdbZqAXQm3o",
+          acessoKey:"HdbZqAXQm3o",
+          href:"https://youtu.be/HdbZqAXQm3o"
         },
       ]
     }]
@@ -42,11 +49,11 @@ const MatematicaBasica = () => {
       videos:[
         {
           nome:"Professor Ferreto: Adição",
-          href:"https://www.youtube.com/watch?v=az6OYFS7AUA"
+          acessoKey:"az6OYFS7AUA"
         },
         {
           nome:"Professor Marcos Aba: Adição para crianças",
-          href:"https://www.youtube.com/watch?v=HdbZqAXQm3o",
+          acessoKey:"HdbZqAXQm3o",
         },
       ]
     },
@@ -56,11 +63,11 @@ const MatematicaBasica = () => {
       videos:[
         {
           nome:"Professor Ferreto: Adição",
-          href:"https://www.youtube.com/watch?v=az6OYFS7AUA"
+          acessoKey:"az6OYFS7AUA"
         },
         {
           nome:"Professor Marcos Aba: Adição para crianças",
-          href:"https://www.youtube.com/watch?v=HdbZqAXQm3o",
+          acessoKey:"HdbZqAXQm3o",
         },
       ]
     }]
@@ -69,7 +76,10 @@ const MatematicaBasica = () => {
   return (
     <div>
       <h2 className="h2ShowAula">Matemática Básica </h2>
-      {mostrarAulas && <ShowAulas Aulas = {Aulas}/>}
+      <Routes>
+       <Route path='' element={<ShowAulas Aulas = {Aulas} setVideos = {setVideos}/>}/>
+       <Route path='/*' element={<ShowVideos Videos = {Videos}/>}/>
+      </Routes>
     </div>
   )
 }
