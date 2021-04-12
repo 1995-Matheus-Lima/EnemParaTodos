@@ -212,6 +212,7 @@ table {
 .containerHome {
   display: block;
   max-width: 940px;
+  width: 98%;
   margin: 20px auto;
   padding-top: 20px;
 }
@@ -227,11 +228,12 @@ table {
 .containerHome h1::after {
   content: "";
   display: block;
-  width: 15%;
+  width: 20%;
   height: 2px;
   background-color: black;
   margin: 10px auto;
 }
+/* ----------------------- Calculadora --------------------- */
 .FormCalculator {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -305,7 +307,7 @@ table {
   flex-wrap: wrap;
 }
 .LinksExternosHomeCss a {
-  min-width: 30%;
+  width: 30%;
   text-align: center;
   text-decoration: none;
   background-color: #3a8c7d;
@@ -423,7 +425,7 @@ table {
 }
 .YoutubeVideos {
   width: 80%;
-  height: 40vw;
+  height: 35vw;
   display: block;
   margin: 20px auto;
   background-color: #71d99e;
@@ -444,4 +446,78 @@ table {
 .Videos a:hover {
   background-color: #212226;
   color: #fff;
+}
+
+/* -------------------- Responsive Styles ------------------ */
+@media (max-width: 850px) and (min-width: 501px) {
+  .containerHome {
+    display: block;
+    margin: 20px auto;
+    padding-top: 20px;
+  }
+  .LinksExternosHomeCss a {
+    width: 45%;
+    background-color: #3a8c7d;
+    border-radius: 2%;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+  .linksInternosCss a {
+    width: 45%;
+  }
+
+  .FormCalculator th,
+  .FormCalculator td {
+    padding: 2px;
+    font-size: 1em;
+    text-align: center;
+  }
+  .FormCalculator input {
+    height: 15px;
+    width: 100px;
+    font-size: 1em;
+  }
+  .blockFooter p {
+    font-size: 1em;
+  }
+  .Videos a {
+    font-size: 0.875em;
+  }
+}
+@media (max-width: 500px) {
+  .containerHome h1 {
+    font-size: 1.125em;
+  }
+  .LinksExternosHomeCss a,
+  .linksInternosCss a {
+    width: 90%;
+    font-size: 0.875em;
+  }
+  .FormCalculator th,
+  .FormCalculator td {
+    padding: 2px;
+    padding-top: 5px;
+    font-size: 1em;
+  }
+  .FormCalculator input {
+    width: 60px;
+  }
+  .FooterStyle p,
+  .FooterStyle h2 {
+    font-size: 1em;
+  }
+  .blockFooter p {
+    font-size: 1em;
+  }
+  .Videos h3 {
+    font-size: 0.875em;
+  }
+  .Videos a {
+    font-size: 0.5em;
+  }
 }

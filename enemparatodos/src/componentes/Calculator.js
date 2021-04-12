@@ -58,7 +58,6 @@ const Calculator = () => {
     const arrayMultiplicacao = notas.map((item,index) => (
       item * pesos[index]
     ))
-    console.log(arrayMultiplicacao);
     const somaNota = arrayMultiplicacao.reduce((somaNota, currentElement)=>( somaNota +currentElement))
     const somaPeso = pesos.reduce((SomaPeso, currentElement)=>( SomaPeso+ currentElement))
     const mediaFinal = (somaNota/somaPeso).toFixed(3)
@@ -70,7 +69,6 @@ const Calculator = () => {
     let count = 0
     event.preventDefault();
     notas.forEach(nota => {if(nota < 0){ count +=1 }})
-    console.log(count)
    
     if( (count === 0) && pesoCorreto){
       showNota();   
