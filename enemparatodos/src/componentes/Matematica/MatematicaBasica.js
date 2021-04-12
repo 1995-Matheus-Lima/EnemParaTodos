@@ -1,11 +1,13 @@
 import React from 'react'
 import { Route, Routes } from 'react-router';
+import { Link } from 'react-router-dom';
 import ShowAulas from '../ShowAulas';
 import ShowVideos from '../ShowVideos';
 
 
 const MatematicaBasica = () => {
-  const [Videos, setVideos] = React.useState({});
+  const [Videos, setVideos] = React.useState(null);
+ 
   const Algebra = {
     Subtitulo:"Álgebra",
     Conteudo:[{
@@ -75,10 +77,12 @@ const MatematicaBasica = () => {
   const Aulas = [Algebra,Geometria];
   return (
     <div>
-      <h2 className="h2ShowAula">Matemática Básica </h2>
+      <Link to="/Disciplinas/Matematica/MatematicaBasica">
+        <h2 className="h2ShowAula">Matemática Básica </h2>
+      </Link>
       <Routes>
        <Route path='' element={<ShowAulas Aulas = {Aulas} setVideos = {setVideos}/>}/>
-       <Route path='/*' element={<ShowVideos Videos = {Videos}/>}/>
+       <Route path='/*' element={ Videos?<ShowVideos Videos = {Videos}/>: <ShowAulas Aulas = {Aulas} setVideos = {setVideos}/>}/>
       </Routes>
     </div>
   )

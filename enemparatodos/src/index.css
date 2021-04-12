@@ -423,6 +423,7 @@ table {
 }
 .YoutubeVideos {
   width: 80%;
+  height: 40vw;
   display: block;
   margin: 20px auto;
   background-color: #71d99e;

@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import '../index.css';
 
 const Header = () => {
+  let local = useLocation();
   const VoltarHome = (event) => {
-    event.target.innerText = "Voltar Para Home"
+    if (local.pathname !== '/'){event.target.innerText = "Voltar Para Home"}
   }
   const HandleOut = (event) =>{
     event.target.innerText = "Enem Para Todos"
