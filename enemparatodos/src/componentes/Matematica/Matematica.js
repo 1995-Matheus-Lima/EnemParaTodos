@@ -1,17 +1,20 @@
 import React from 'react'
 import {  Link, Route, Routes } from 'react-router-dom'
 import LinksMaterias from '../LinksMaterias'
+import Funcoes from './Funcoes'
 import MatematicaBasica from './MatematicaBasica'
 
 const Matematica = () => {
+  const title = document.querySelector('title')
+  title.innerText = 'E.P.T | MATEMÁTICA'
   const materias = [
     {
       nome:"Matematica Básica",
       id:"MatematicaBasica"
     },
     {
-      nome:"Funções",
-      id:"funcoes"
+      nome:"Funções e Conjuntos",
+      id:"Funcoes"
     },
     {
       nome:"Trigonometria",
@@ -25,6 +28,7 @@ const Matematica = () => {
       <Routes>
         <Route path='' element={<LinksMaterias Disciplina='Matematica' materias={materias}/>}/>
         <Route path='/MatematicaBasica/*' element={<MatematicaBasica/>}/>
+        <Route path='/Funcoes/*' element={<Funcoes/>}/>
       </Routes>
     </div>
   )

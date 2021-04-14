@@ -367,11 +367,13 @@ table {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 .ShowAulas p,
 .ShowAulas a {
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 5px 0;
+  padding: 10px 0;
   text-align: center;
   width: 100%;
   background-color: chartreuse;
@@ -382,6 +384,9 @@ table {
 .ShowAulas a:nth-child(even) {
   background-color: #3a8c7d;
   color: #fff;
+}
+.ShowAulas a:hover {
+  border: 2px solid #fff;
 }
 .h2ShowAula {
   display: block;
@@ -425,7 +430,7 @@ table {
 }
 .YoutubeVideos {
   width: 80%;
-  height: 35vw;
+  height: 400px;
   display: block;
   margin: 20px auto;
   background-color: #71d99e;
@@ -466,6 +471,9 @@ table {
     letter-spacing: 0.1em;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+  .YoutubeVideos {
+    height: 300px;
   }
   .linksInternosCss a {
     width: 45%;
@@ -519,5 +527,8 @@ table {
   }
   .Videos a {
     font-size: 0.5em;
+  }
+  .YoutubeVideos {
+    height: 200px;
   }
 }
