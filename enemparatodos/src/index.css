@@ -386,7 +386,8 @@ table {
   color: #fff;
 }
 .ShowAulas a:hover {
-  border: 2px solid #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 .h2ShowAula {
   display: block;
