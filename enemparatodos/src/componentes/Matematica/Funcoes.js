@@ -239,10 +239,144 @@ const Funcoes = () => {
           acessKey:"yzCgrtQ-3tk",
         }
       ]
+    }
+   ]
+  }
+  const Funcoes = {
+    Subtitulo:"Funções",
+    Conteudo:[
+      {
+      name:"Conceito de Função",
+      id:"Conceito_de_Funcao",
+      videos:[
+        {
+          name:"MTM Matemática para Todos: Entenda o conceito de FUNÇÃO",
+          acessKey:"DoyE0pgxRmY",
+        },
+        {
+          name:"Matemática fácil: Funções - Definição",
+          acessKey:"-tHIyqC2ifA",
+        },
+        {
+          name:"Professor Diogo francisco: Conceito de Função",
+          acessKey:"DoP4h4gEGc4",
+        },
+      ]
+    },
+    {
+      name:"Notação das Funções",
+      id:"Notacao_das_Funcoes",
+      videos:[
+        {
+          name:"Professor Emani: FUNÇÕES - A NOTAÇÃO f(x)",
+          acessKey:"DoP4h4gEGc4",
+        },
+        {
+          name:"bate-papo:educação | Função e notação f(x)",
+          acessKey:"tSPC-5hXYCI",
+        },
+        {
+          name:"Bora passar: FUNÇÃO - Notação",
+          acessKey:"F0IbvivVtnY",
+        },
+        {
+          name:"Mat Fácil: Conceito de Função",
+          acessKey:"smZgBUagkg8",
+        },
+      ]
+    },
+    {
+      name:"Domínio Contradomínio e imagem",
+      id:"Dominio_Contradominio_e_imagem",
+      videos:[
+        {
+          name:"Professor Ferretto: Domínio, Contradomínio e Conjunto Imagem",
+          acessKey:"G3zjNRYbDv8",
+        },
+        {
+          name:"Professora Angela: Domínio, contradomínio e imagem de uma função",
+          acessKey:"SGvCRsQsOtQ",
+        },
+        {
+          name:"Professor Marcos Aba: DOMÍNIO, CONTRADOMÍNIO E IMAGEM DA FUNÇÃO Parte 01",
+          acessKey:"fY3kFknl5Kg",
+        },
+        {
+          name:"Professor Marcos Aba: DOMÍNIO, CONTRADOMÍNIO E IMAGEM DA FUNÇÃO Parte 02",
+          acessKey:"ntTt-VFRTnw",
+        },
+       
+        {
+          name:"Professor Rafael Procopio: Domínio, Contradomínio, Imagem de uma Função",
+          acessKey:"dPHzm5u8Nwc",
+        }
+      ]
+    },
+    {
+      name:"Igualdade de Funções",
+      id:"Igualdade_de_Funcoes",
+      videos:[
+        {
+          name:"Professor Gustavo: Igualdade de Funções",
+          acessKey:"lc6EoZAj7sQ",
+        },
+        {
+          name:"Matemática com Rubão: Igualdade de funções",
+          acessKey:"qOLDuEAVWSo",
+        }
+      ]
     },
    ]
   }
-  const Aulas = [Conjuntos, ConjuntosNumericos, Relacoes];
+  const Funcoes1grau = {
+    Subtitulo:"Funções do 1° Grau",
+    Conteudo:[
+      {
+      name:"Função Constante",
+      id:"Funcao_Constante",
+      videos:[
+        {
+          name:"Professora Danielle nunes: d_K4yFmN2nQ",
+          acessKey:"d_K4yFmN2nQ",
+        },
+        {
+          name:"Professor Rafael Procopio: Função Constante",
+          acessKey:"ivRjk7T6AXw",
+        },
+      ]
+    },
+    {
+      name:"Função Identidade",
+      id:"Funcao_Identidade",
+      videos:[
+        {
+          name:"Professor: warlisson: Função identidade",
+          acessKey:"ie3vEkIZ9b8",
+        },
+        {
+          name:"Professor Fernando Rocha: Função Identidade",
+          acessKey:"iqk8sD95D8A",
+        },
+      ]
+    },
+    {
+      name:"Função Linear",
+      id:"Funcao_Linear",
+      videos:[
+        /* Continuar desta linha!!!! */
+        {
+          name:"Professor: warlisson: Função identidade",
+          acessKey:"ie3vEkIZ9b8",
+        },
+        {
+          name:"Professor Fernando Rocha: Função Identidade",
+          acessKey:"iqk8sD95D8A",
+        },
+      ]
+    },
+   ]
+  }
+  const Aulas = [Conjuntos, ConjuntosNumericos, Relacoes, Funcoes, Funcoes1grau];
   const back = '/Disciplinas/Matematica/Funcoes'
   return (
     <div>
