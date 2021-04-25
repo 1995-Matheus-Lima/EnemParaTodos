@@ -350,7 +350,7 @@ const Funcoes = () => {
       id:"Funcao_Identidade",
       videos:[
         {
-          name:"Professor: warlisson: Função identidade",
+          name:"Professor warlisson: Função identidade",
           acessKey:"ie3vEkIZ9b8",
         },
         {
@@ -363,20 +363,131 @@ const Funcoes = () => {
       name:"Função Linear",
       id:"Funcao_Linear",
       videos:[
-        /* Continuar desta linha!!!! */
         {
-          name:"Professor: warlisson: Função identidade",
-          acessKey:"ie3vEkIZ9b8",
+          name:"Professor warlisson: Função linear",
+          acessKey:"BoF4aGzFH1g",
         },
         {
-          name:"Professor Fernando Rocha: Função Identidade",
-          acessKey:"iqk8sD95D8A",
+          name:"Professora Edna Mendes: Função linear",
+          acessKey:"mkVStUhqnJ8",
+        },
+      ]
+    },
+    {
+      name:"Função Afim",
+      id:"Funcao_Afim",
+      videos:[
+        {
+          name:"Professor Ferretto: Conceitos Iniciais",
+          acessKey:"hdMFlAv5GkU",
+        },
+        {
+          name:"Professor Ferretto:Determinando a Função",
+          acessKey:"-EnodYhcQw4",
+        },
+        {
+          name:"Professor Ferretto: Exercícios",
+          acessKey:"yTfNuU2xrrc",
+        },
+        {
+          name:"Professor Ferretto: Gráfico",
+          acessKey:"2KWDWpmDZwQ",
+        },
+        {
+          name:"Professor Ferretto: Coeficiente Angular e Coeficiente Linear",
+          acessKey:"xDTd2a4NJ40",
+        },
+        {
+          name:"Professor Ferretto: Exercícios",
+          acessKey:"Bs2Ylb4x2V8",
+        },
+        {
+          name:"Professor Ferretto: Casos Particulares",
+          acessKey:"567sWGTnf5Q",
+        },
+        {
+          name:"Professor Ferretto: Zero ou Raiz da Função",
+          acessKey:"PgOLmJ00KPQ",
+        },
+        {
+          name:"Professor Ferretto: Estudo do Sinal",
+          acessKey:"5FpSn7-k2sk",
+        },
+      ]
+    },
+    {
+      name:"Inequação do 1° Grau",
+      id:"Inequacoes_do_primeiro_grau",
+      videos:[
+        {
+          name:"Professor Ferretto: Conceitos Iniciais",
+          acessKey:"LsX-0I5w9UE",
+        },
+        {
+          name:"Professor Ferretto: Inequações Simultâneas",
+          acessKey:"q1dYyoDKVs4",
+        },
+        {
+          name:"Professor Ferretto: Inequação Produto",
+          acessKey:"pxkS0gN0gN0",
+        },
+        {
+          name:"Professor Ferretto: Inequação Quociente",
+          acessKey:"HBkSpbVoYW4",
         },
       ]
     },
    ]
   }
-  const Aulas = [Conjuntos, ConjuntosNumericos, Relacoes, Funcoes, Funcoes1grau];
+  const Funcoes2grau = {
+    Subtitulo:"Funções Quadrática",
+    Conteudo:[
+      {
+      name:"Funções do 2° grau",
+      id:"Funcoes_do_2_grau",
+      videos:[
+        {
+          name:"Professor Ferretto: Conceitos Iniciais",
+          acessKey:"Z5aVW_Zgifk",
+        },
+        {
+          name:"Professor Ferretto: Zeros, Raízes e Fórmula de Bhaskara ",
+          acessKey:"CNqeTO2tCuI",
+        },
+        {
+          name:"Professor Ferretto: Quantidade de Raízes Reais",
+          acessKey:"4d48gLFe3F0",
+        },
+        {
+          name:"Professor Ferretto:  Exercícios",
+          acessKey:"oPLsPe94q8Y",
+        },
+        {
+          name:"Professor Ferretto: Gráfico Parábola aula 1",
+          acessKey:"ZnxMdyN4Xp8",
+        },
+        {
+          name:"Professor Ferretto: Gráfico Parábola aula 2",
+          acessKey:"U9I1LFFcUkw",
+        },
+        {
+          name:"Professor Ferretto: Exercícios sobre Gráfico parte 1",
+          acessKey:"-iMToBhO2i8",
+        },
+        {
+          name:"Professor Ferretto: Exercícios sobre Gráfico parte 2",
+          acessKey:"yihH524OkeA",
+        },
+        {
+          name:"Professor Ferretto: Estudo do Sinal Gráfico Parábola",
+          acessKey:"SggGwu1VV3s",
+        },
+      ]
+    },
+   ]
+  }
+  /* adicionar os topicos de inequações do 2 grau no item acima */
+  const Aulas = [Conjuntos, ConjuntosNumericos, Relacoes, Funcoes, Funcoes1grau, Funcoes2grau];
   const back = '/Disciplinas/Matematica/Funcoes'
   return (
     <div>
