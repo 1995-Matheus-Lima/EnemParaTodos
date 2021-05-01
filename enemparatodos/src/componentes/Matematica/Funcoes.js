@@ -484,10 +484,197 @@ const Funcoes = () => {
         },
       ]
     },
+    {
+    name:"inequações do 2° grau",
+      id:"inequacoes_do_2_grau",
+      videos:[
+        {
+          name:"Professor Ferretto: Conceitos Iniciais",
+          acessKey:"UKgRWYwrzd0",
+        },
+        {
+          name:"Professor Ferretto: Inequações Simultâneas",
+          acessKey:"C50Um6OjmTg",
+        },
+        {
+          name:"Professor Ferretto: Inequação Produto",
+          acessKey:"Rh99ZjA2NuU",
+        },
+        {
+          name:"Professor Ferretto: Inequação Quociente",
+          acessKey:"u1zvLoATa-8",
+        },  
+      ]
+    } 
    ]
   }
-  /* adicionar os topicos de inequações do 2 grau no item acima */
-  const Aulas = [Conjuntos, ConjuntosNumericos, Relacoes, Funcoes, Funcoes1grau, Funcoes2grau];
+  const FuncaosModulares = {
+    Subtitulo:"Função Modular",
+    Conteudo:[
+      {
+      name:"Função Modular",
+      id:"Funcao_Modular",
+      videos:[
+        {
+          name:"Professor Ferretto: Módulo de um Número Real",
+          acessKey:"sXFdCZXzRT8",
+        },
+        {
+          name:"Professor Ferretto: Propriedades do Módulo",
+          acessKey:"WHaqx5VxXVc",
+        },
+        {
+          name:"Professor Ferretto: Gráfico",
+          acessKey:"HMEBmYNncuQ",
+        },
+        {
+          name:"Professor Ferretto: Equações Modulares",
+          acessKey:"2fFnD5vgE5Q",
+        },
+        {
+          name:"Professor Ferretto: Inequações Modulares",
+          acessKey:"jnEskZaPah0",
+        },
+      ]
+    },
+    
+   ]
+  }
+  const OutrasFuncoes = {
+    Subtitulo:"Outras Funções",
+    Conteudo:[
+      {
+        name:"Função f(x) = x³",
+        id:"Funcao_f(x)=x_elevado_a_3",
+        videos:[
+          {
+            name:"rugamath: Función f(x) = x^3",
+            acessKey:"IiQy_QfKiFE",
+          },
+        ]
+      },
+      {
+        name:"Função recíproca",
+        id:"Funcao_reciproca",
+        videos:[
+          {
+            name:"Professor Thalles Abreu Mezencio:  Função recíproca",
+            acessKey:"IiQy_QfKiFE",
+          },
+          {
+            name:"Ômega Matemática:  Função recíproca",
+            acessKey:"IWLYSsR_FZI",
+          },
+          {
+            name:"Professor Francisco Magalhães Gomes:  Função recíproca",
+            acessKey:"q2uCUrig_kI",
+          },
+        ]
+      },
+      {
+        name:"Função máximo inteiro",
+        id:"Funcao_Maximo_inteiro",
+        videos:[
+          {
+            name:"Inter Mat: Função Máximo Inteiro",
+            acessKey:"BuJJGEXqbn4",
+          },
+        ]
+      },
+      {
+        name:"Função Composta",
+        id:"Funcao_Composta",
+        videos:[
+          {
+            name:"Professor Ferretto:  Função Composta ",
+            acessKey:"V9yhPL87lGs",
+          },
+          {
+            name:"Professor  Marcos Aba:  Função Composta ",
+            acessKey:"s5ZIGMVzMY8",
+          },
+          {
+            name:"Professor  Paulo Pereira:  Função Composta ",
+            acessKey:"EBRXQpXbXio",
+          },
+        ]
+      },
+      {
+        name:"Função Sobrejetora",
+        id:"Funcao_Sobrejetora",
+        videos:[
+          {
+            name:"Professor Ferretto: Função Sobrejetora",
+            acessKey:"057CkKna7kM",
+          },
+          {
+            name:"Professor Rafael Procopio: Função Sobrejetora ou Função Sobrejetiva",
+            acessKey:"rkapkXaTDoE",
+          },
+          {
+            name:"Estude Matemática: Função Sobrejetora",
+            acessKey:"845SQu5O3ws",
+          },
+        ]
+      },
+      {
+        name:"Função Injetora",
+        id:"Funcao_Injetora",
+        videos:[
+          {
+            name:"Professor Ferretto:  Função Injetora",
+            acessKey:"OMvGmAB96do",
+          },
+          {
+            name:"Professor Rafael Procopio: Função Injetora ou Função Injetiva",
+            acessKey:"JS9AL_UfZ6s",
+          },
+          {
+            name:"Estude Matemática: Função  Injetora",
+            acessKey:"S0fJfPP792o",
+          },
+        ]
+      },
+      {
+        name:"Função Bijetora",
+        id:"Funcao_bijetora",
+        videos:[
+          {
+            name:"Professor Ferretto:  Função Bijetora",
+            acessKey:"B8TtvV_vKQc",
+          },
+          {
+            name:"Professor Rafael Procopio: Função Bijetora ou Função Bijetiva",
+            acessKey:"BieXxZ1xL0M",
+          },
+          {
+            name:"Estude Matemática: Função  Bijetora",
+            acessKey:"80vAaZvKFfk",
+          },
+        ]
+      },
+      {
+        name:"Função inversa",
+        id:"Funcao_inversa",
+        videos:[
+          {
+            name:"Professor Ferretto:  Função Inversa",
+            acessKey:"k-BPycvaZLA",
+          },
+          {
+            name:"Professor Rafael Procopio: Função Inversa",
+            acessKey:"5x-detAH3gk",
+          },
+          {
+            name:"Estude Matemática: Função Inversa",
+            acessKey:"fQ9-WLzOuVs",
+          },
+        ]
+      },
+    ]
+  }
+  
+  const Aulas = [Conjuntos, ConjuntosNumericos, Relacoes, Funcoes, Funcoes1grau, Funcoes2grau, FuncaosModulares, OutrasFuncoes];
   const back = '/Disciplinas/Matematica/Funcoes'
   return (
     <div>
