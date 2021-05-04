@@ -3,6 +3,8 @@ import {  Link, Route, Routes } from 'react-router-dom'
 import LinksMaterias from '../LinksMaterias'
 import Funcoes from './Funcoes'
 import MatematicaBasica from './MatematicaBasica'
+import Logaritmos from './Logaritmos'
+import Trigonometria from './Trigonometria'
 
 const Matematica = () => {
   const title = document.querySelector('title')
@@ -17,6 +19,10 @@ const Matematica = () => {
       id:"Funcoes"
     },
     {
+      nome:"exponencial e Logaritmo",
+      id:"Logaritmos"
+    },
+    {
       nome:"Trigonometria",
       id:"Trigonometria"
     }
@@ -28,7 +34,9 @@ const Matematica = () => {
       <Routes>
         <Route path='' element={<LinksMaterias Disciplina='Matematica' materias={materias}/>}/>
         <Route path='/MatematicaBasica/*' element={<MatematicaBasica/>}/>
-        <Route path='/Funcoes/*' element={<Funcoes/>}/>
+        <Route path='/Funcoes/*' element={<Funcoes/>}/>Trigonometria
+        <Route path='/Logaritmos/*' element={<Logaritmos/>}/>
+        <Route path='/Trigonometria/*' element={<Trigonometria/>}/>
       </Routes>
     </div>
   )
