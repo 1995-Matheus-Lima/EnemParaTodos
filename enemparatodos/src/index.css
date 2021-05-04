@@ -333,6 +333,7 @@ table {
 }
 .linksInternosCss a {
   min-width: 30%;
+  max-width: 30%;
   text-align: center;
   text-decoration: none;
   background-color: #3a8c7d;

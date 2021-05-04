@@ -5,6 +5,7 @@ import Funcoes from './Funcoes'
 import MatematicaBasica from './MatematicaBasica'
 import Logaritmos from './Logaritmos'
 import Trigonometria from './Trigonometria'
+import SequenciasMatrizesDeterminantesESistemas from './SequenciasMatrizesDeterminantesESistemas'
 
 const Matematica = () => {
   const title = document.querySelector('title')
@@ -25,6 +26,10 @@ const Matematica = () => {
     {
       nome:"Trigonometria",
       id:"Trigonometria"
+    },
+    {
+      nome:"Sequencias, Matrizes, Determinantes E Sistemas",
+      id:"SequenciasMatrizesDeterminantesESistemas"
     }
   ]
 
@@ -37,6 +42,7 @@ const Matematica = () => {
         <Route path='/Funcoes/*' element={<Funcoes/>}/>Trigonometria
         <Route path='/Logaritmos/*' element={<Logaritmos/>}/>
         <Route path='/Trigonometria/*' element={<Trigonometria/>}/>
+        <Route path='/SequenciasMatrizesDeterminantesESistemas/*' element={<SequenciasMatrizesDeterminantesESistemas/>}/>
       </Routes>
     </div>
   )

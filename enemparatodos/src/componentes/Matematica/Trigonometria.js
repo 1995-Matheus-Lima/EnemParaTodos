@@ -5,7 +5,7 @@ import ShowAulas from '../ShowAulas';
 import ShowVideos from '../ShowVideos';
 
 
-const Funcoes = () => {
+const Trigonometria = () => {
   const [Videos, setVideos] = React.useState(null);
  
   const ArcoseAngulos = {
@@ -184,9 +184,240 @@ const Funcoes = () => {
     },
    ]
   }
-  
-  
-  const Aulas = [ ArcoseAngulos, FuncoesCirculares ];
+  const RelacaoFundamental = {
+    Subtitulo:"Relações Fundamentais",
+    Conteudo:[
+      {
+      name:"Relações Fundamentais",
+      id:"Relacoes_Fundamentais",
+      videos:[
+        {
+          name:"Tv Hexag: Relações Fundamentais da Trigonometria",
+          acessKey:"guZ8saypRDA",
+        },
+        {
+          name:"Me Salva: Relações fundamentais da trigonometria",
+          acessKey:"PnzMTU7Evqo",
+        },
+        {
+          name:"Professor Marcelo Gama: Relacao fundamental da trigonometria",
+          acessKey:"1hiMs63PnPE",
+        },
+      ]
+    }
+   ]
+  }
+  const ReducaoAoPrimeiroQuadrante = {
+    Subtitulo:"Reducao Ao Primeiro Quadrante",
+    Conteudo:[
+      {
+      name:"Redução do 2° ao 1° Quadrante",
+      id:"Reducao_Do_Segundo_ao_Primeiro_Quadrante",
+      videos:[
+        {
+          name:"Professor Silvio Freitas: Redução do Segundo Quadrante ao Primeiro Quadrante",
+          acessKey:"gcg6tiRk4hc",
+        },
+        {
+          name:"PCI Concursos: Redução do 2º ao 1º Quadrante",
+          acessKey:"2tLv6I8Foco",
+        }
+      ]
+    },
+    {
+      name:"Redução do 3° ao 1° Quadrante",
+      id:"Reducao_Do_Terceiro_ao_Primeiro_Quadrante",
+      videos:[
+        {
+          name:"Professor Silvio Freitas: Redução do Terceiro Quadrante ao Primeiro Quadrante",
+          acessKey:"nOq6U00SeGQ",
+        }
+      ]
+    },
+    {
+      name:"Redução do 4° ao 1° Quadrante",
+      id:"Reducao_Do_Quarto_ao_Primeiro_Quadrante",
+      videos:[
+        {
+          name:"Professor Silvio Freitas: Redução do Quarto Quadrante ao Primeiro Quadrante",
+          acessKey:"MoHs7JlgtGM",
+        },
+        {
+          name:"O Kuadro: Redução do 4º ao 1º Quadrante",
+          acessKey:"2KGNCtllKlc",
+        },
+        {
+          name:"PCI Concursos: Redução do 4º ao 1º Quadrante",
+          acessKey:"otttalXQHng",
+        }
+      ]
+    }
+   ]
+  }
+  const Transformacoes = {
+    Subtitulo:"Transformações",
+    Conteudo:[
+      {
+      name:"Fórmulas de Adição E Subtração de Arcos ",
+      id:"Formulas_De_Adicao_E_Subttracao_De_Arcos",
+      videos:[
+        {
+          name:"Professor Paulo pereira: FÓRMULAS DE ADIÇÃO DE ARCOS",
+          acessKey:"99J5IHR-Ld0",
+        },
+        {
+          name:"Professor Sandro Curió: Adição e Subtração de Arcos",
+          acessKey:"NWF4JRWg6rI",
+        },
+        {
+          name:"Professor valentim: FÓRMULAS DA ADIÇÃO DE ARCOS",
+          acessKey:"kKPesIklQiY",
+        },
+      ]
+    },
+    {
+      name:"Fórmulas de Multiplicação de Arcos ",
+      id:"Formulas_De_Multiplicacao_De_Arcos",
+      videos:[
+        {
+          name:"Professor Paulo pereira: FÓRMULAS DO ARCO DUPLO",
+          acessKey:"390o5Dzzy9E",
+        },
+        {
+          name:"Professor gusalberto8: Fórmulas do arco duplo",
+          acessKey:"J0ZQiShIuYI",
+        },
+        {
+          name:"Professor Isaias de jesus: formulas arcos duplos",
+          acessKey:"tns8UisvKnY",
+        },
+      ]
+    },
+    {
+      name:"Fórmulas de Divisão de Arcos ",
+      id:"Formulas_De_Divisao_De_Arcos",
+      videos:[
+        {
+          name:"Professor Paulo pereira: ARCO METADE (BISSECÇÃO DE ARCOS)",
+          acessKey:"P1uC3h_hSto",
+        },
+        {
+          name:"Professor gusalberto8: Fórmulas do arco metade ",
+          acessKey:"qj-2JVckLHQ",
+        },
+        {
+          name:"Professor Joaquim: formulas arcos duplos",
+          acessKey:"HE9ovcqJ6i4",
+        },
+      ]
+    }
+   ]
+  }
+  const EquacoesTrigonometricas = {
+    Subtitulo:"Equacões Trigonométricas",
+    Conteudo:[
+      {
+        name:"Equações Fundamentais",
+        id:"Equacoes_Fundamentais",
+        videos:[
+          {
+            name:"Professor Paulo perreira: EQUAÇÕES TRIGONOMÉTRICAS (FUNDAMENTAIS)",
+            acessKey:"-LFDt4m4TpI",
+          },
+          {
+            name:"Professor gui: Equações Trigonométricas ",
+            acessKey:"VVLAULiSSYM",
+          },
+        ]
+      }
+    ]
+  }
+  const InequacoesTrigonometricas = {
+    Subtitulo:"Inequacões Trigonométricas",
+    Conteudo:[
+      {
+        name:"Inequações Trigonométricas",
+        id:"Inequacoes_Trigonometricas",
+        videos:[
+          {
+            name:"Professor Paulo perreira: INEQUAÇÕES TRIGONOMÉTRICAS (FUNDAMENTAIS)",
+            acessKey:"kWzpQ9Sy7wA",
+          },
+          {
+            name:"Professor gui: inequações Trigonométricas ",
+            acessKey:"FgUwPkCorP4",
+          },
+          {
+            name:"TV Hexag: inequações Trigonométricas ",
+            acessKey:"JtTqHa8xcys",
+          },
+          {
+            name:"Professor Sandro Cúrio: inequações Trigonométricas ",
+            acessKey:"qIu-Iw5MPFg",
+          }
+        ]
+      }
+    ]
+  }
+  const TrianguloRetangulo = {
+    Subtitulo:"Triângulos Retângulo",
+    Conteudo:[
+      {
+        name:"Trigonometria no Triângulo Retângulo",
+        id:"Trigonometria_no_Triangulo_Retangulo",
+        videos:[
+          {
+            name:"Professora Angela: Relações Trigonométricas no Triângulo Retângulo",
+            acessKey:"MWPXfX8YmOY",
+          },
+          {
+            name:"Professor Paulo Pereira: Trigonometria no Triângulo Retângulo",
+            acessKey:"4sTUs4ll3dI",
+          },
+          {
+            name:"Professor Marcos Aba: RAZÕES TRIGONOMÉTRICAS NO TRIÂNGULO RETÂNGULO",
+            acessKey:"1QfKsnynZMY",
+          },
+          {
+            name:"Professor Sandro Cúrio: RAZÕES TRIGONOMÉTRICAS NO TRIÂNGULO RETÂNGULO ",
+            acessKey:"v0Yj0JWs-h4",
+          }
+        ]
+      }
+    ]
+  }
+  const TriangulosQuaisquer = {
+    Subtitulo:"Triângulos Quaisquer",
+    Conteudo:[
+      {
+        name:"Trigonometria em Triângulos Quaisquer",
+        id:"Trigonometria_Em_Triangulos_Quaisquer",
+        videos:[
+          {
+            name:"Professor Paulo perreira: Lei dos Senos",
+            acessKey:"t6zTP7fU8lA",
+          },
+          {
+            name:"Professor Paulo perreira: Lei dos Cossenos",
+            acessKey:"-ChDnLM47xo",
+          },
+          {
+            name:"Professor gui valenzuela: Triângulo Qualquer ",
+            acessKey:"vSBqw9ETotk",
+          },
+          {
+            name:"Professor gui: Triângulo Qualquer ",
+            acessKey:"6ns8Wf15Gh4",
+          },
+          {
+            name:"Professor Ana Paula Ganassoli: Trigonometria num triângulo qualquer",
+            acessKey:"tnIUKDCL9iU",
+          }
+        ]
+      }
+    ]
+  }
+  const Aulas = [ ArcoseAngulos, FuncoesCirculares, RelacaoFundamental, ReducaoAoPrimeiroQuadrante, Transformacoes, EquacoesTrigonometricas, InequacoesTrigonometricas, TrianguloRetangulo, TriangulosQuaisquer ];
   const back = '/Disciplinas/Matematica/Trigonometria'
   return (
     <div>
@@ -201,4 +432,4 @@ const Funcoes = () => {
   )
 }
 
-export default Funcoes
+export default Trigonometria

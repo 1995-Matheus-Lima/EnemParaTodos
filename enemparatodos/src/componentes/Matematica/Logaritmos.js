@@ -5,7 +5,7 @@ import ShowAulas from '../ShowAulas';
 import ShowVideos from '../ShowVideos';
 
 
-const Funcoes = () => {
+const Logaritmos = () => {
   const [Videos, setVideos] = React.useState(null);
  
   const PotenciasERaizes = {
@@ -252,4 +252,4 @@ const Funcoes = () => {
   )
 }
 
-export default Funcoes
+export default Logaritmos
