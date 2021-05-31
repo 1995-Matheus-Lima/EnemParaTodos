@@ -137,6 +137,7 @@ table {
 }
 /* ---------- main container -----------*/
 .principal {
+  
   display: block;
   margin: -5px auto 0 auto;
   max-width: 1400px;
@@ -332,8 +333,7 @@ table {
   flex-wrap: wrap;
 }
 .linksInternosCss a {
-  min-width: 30%;
-  max-width: 30%;
+  width: 30%;
   text-align: center;
   text-decoration: none;
   background-color: #3a8c7d;
@@ -462,7 +462,7 @@ table {
     margin: 20px auto;
     padding-top: 20px;
   }
-  .LinksExternosHomeCss a {
+  .LinksExternosHomeCss a,.linksInternosCss a {
     width: 45%;
     background-color: #3a8c7d;
     border-radius: 2%;

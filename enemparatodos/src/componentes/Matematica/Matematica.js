@@ -6,7 +6,9 @@ import MatematicaBasica from './MatematicaBasica'
 import Logaritmos from './Logaritmos'
 import Trigonometria from './Trigonometria'
 import SequenciasMatrizesDeterminantesESistemas from './SequenciasMatrizesDeterminantesESistemas'
-
+import AnaliseCombinatoria from './AnaliseCombinatoria'
+import ComplexosEPolinomios from './ComplexosEPolinomios'
+import GeometriaAnalitica from './GeometriaAnalitica'
 const Matematica = () => {
   const title = document.querySelector('title')
   title.innerText = 'E.P.T | MATEMÁTICA'
@@ -30,7 +32,19 @@ const Matematica = () => {
     {
       nome:"Sequencias, Matrizes, Determinantes E Sistemas",
       id:"SequenciasMatrizesDeterminantesESistemas"
-    }
+    },
+    {
+      nome:"Análise Combinatória",
+      id:"AnaliseCombinatoria"
+    },
+    {
+      nome:"Números Complexos E Polinômios",
+      id:"ComplexosEPolinomios"
+    },
+    {
+      nome:"Geometria Analítica",
+      id:"GeometriaAnalitica"
+    },  
   ]
 
   return (
@@ -43,6 +57,9 @@ const Matematica = () => {
         <Route path='/Logaritmos/*' element={<Logaritmos/>}/>
         <Route path='/Trigonometria/*' element={<Trigonometria/>}/>
         <Route path='/SequenciasMatrizesDeterminantesESistemas/*' element={<SequenciasMatrizesDeterminantesESistemas/>}/>
+        <Route path='/AnaliseCombinatoria/*' element={<AnaliseCombinatoria/>}/>
+        <Route path='/ComplexosEPolinomios/*' element={<ComplexosEPolinomios/>}/>
+        <Route path='/GeometriaAnalitica/*' element={<GeometriaAnalitica/>}/>
       </Routes>
     </div>
   )

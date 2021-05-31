@@ -8,53 +8,190 @@ import ShowVideos from '../ShowVideos';
 const SequenciasMatrizesDeterminantesESistemas = () => {
   const [Videos, setVideos] = React.useState(null);
  
-  const ArcoseAngulos = {
-    Subtitulo:"Arcos e Angulos",
+  const ProgressaoAritmetica = {
+    Subtitulo:"Progressão Aritmética",
     Conteudo:[
       {
-      name:"Arcos De circunferência",
-      id:"Arcos_De_circunferencia",
+      name:"Progressão Aritmética",
+      id:"Progressao_Aritmetica",
       videos:[
         {
-          name:"Professor Ferretto: Arco, ângulo e raio de uma circunferência ",
-          acessKey:"wpXOmatuTKo",
+          name:"Professor Ferretto: Introdução",
+          acessKey:"TC2HcZV3mGo",
         },
         {
-          name:"Professora Gisele Ramos: Arco da circunferência e ângulo central",
-          acessKey:"i1LjWiiurdw",
+          name:"Professor Ferretto: Termo Geral da PA",
+          acessKey:"yfmhfoB0kVA",
         },
         {
-          name:"Professor Rafael Procopio: Arco da circunferência e ângulo central",
-          acessKey:"rgOm_9P82j0",
+          name:"Professor Ferretto: Termo Geral da PA  Exercícios",
+          acessKey:"dzoloHN076c",
+        },
+        {
+          name:"Professor Ferretto: Notações Especiais",
+          acessKey:"qoX9HFbYbK4",
+        },
+        {
+          name:"Professor Ferretto: Interpolação de Meios Aritmético",
+          acessKey:"PGDk9ZHPudg",
+        },
+        {
+          name:"Professor Ferretto: Soma dos Termos",
+          acessKey:"vyJGTm6WvdU",
         },
       ]
-    },
-    {
-      name:"Ciclo trigronometrico",
-      id:"Ciclo_trigronometrico",
-      videos:[
-        {
-          name:"Professor Marcos Aba: Seno, Cosseno e tangente",
-          acessKey:"a7Gu5GzGRgE",
-        },
-        {
-          name:"Professor Gui: Ciclo Trigonométrico",
-          acessKey:"PjqZMWZ6t9Q",
-        },
-        {
-          name:"Professor Rafa Jesus: Ciclo Trigonométrico",
-          acessKey:"eR9i5AJZMi0",
-        },
-        {
-          name:"Professor Paulo Pereira: CIRCUNFERÊNCIA TRIGONOMÉTRICA",
-          acessKey:"8gwCPpp_Ujo",
-        },
-      ]
-    },
+    }
    ]
   }
-
-  const Aulas = [ ArcoseAngulos,];
+  const ProgressaoGeometrica = {
+    Subtitulo:"Progressão Geométrica",
+    Conteudo:[
+      {
+      name:"Progressão Geométrica",
+      id:"Progressao_Geometrica",
+      videos:[
+        {
+          name:"Professor Ferretto: Introdução",
+          acessKey:"Jad_XG9bDCE",
+        },
+        {
+          name:"Professor Ferretto: Termo Geral da PG",
+          acessKey:"0rRuhofRVuU",
+        },
+        {
+          name:"Professor Ferretto: Termo Geral da PG  Exercícios",
+          acessKey:"6ShsVLOtGQI",
+        },
+        {
+          name:"Professor Ferretto: Notações Especiais",
+          acessKey:"NM9H8__q4gU",
+        },
+        {
+          name:"Professor Ferretto: Interpolação de de Meios Geométricos",
+          acessKey:"Hsp10bhYQEs",
+        },
+        {
+          name:"Professor Ferretto: Soma dos Termos de uma PG Finita ",
+          acessKey:"CDZYMkxv2JA",
+        },
+        {
+          name:"Professor Ferretto: Soma dos Termos de uma PG Infinita ",
+          acessKey:"N_EatIhGANo",
+        },
+        {
+          name:"Professor Ferretto: Exercícios de PA e PG Simultaneamente",
+          acessKey:"ANwGhVVhs-s",
+        },
+      ]
+    }
+   ]
+  }
+  const Matrizes = {
+    Subtitulo:"Matrizes",
+    Conteudo:[
+      {
+      name:"Matrizes",
+      id:"Matrizes",
+      videos:[
+        {
+          name:"Professor Paulo Pereira: Conceitos Iniciais",
+          acessKey:"lZ9onrdpusA",
+        },
+        {
+          name:"Professor Paulo Pereira: Lei de Formação",
+          acessKey:"k2ssH1Hx9Yg",
+        },
+        {
+          name:"Professor Paulo Pereira: TRANSPOSTA, SIMÉTRICA E ANTISSIMÉTRICA",
+          acessKey:"3hTlEWrGtf8",
+        },
+        {
+          name:"Professor Paulo Pereira: IGUALDADE, MULTIPLICAÇÃO POR ESCALAR, ADIÇÃO E SUBTRAÇÃO",
+          acessKey:"PCzXBP-TA-s",
+        },
+        {
+          name:"Professor Paulo Pereira: MULTIPLICAÇÃO",
+          acessKey:"eCmv6v53V88",
+        },
+        {
+          name:"Professor Paulo Pereira: MATRIZ INVERSA",
+          acessKey:"wfDoPGfo2fE",
+        },
+      ]
+    }
+   ]
+  }
+  const Determinantes = {
+    Subtitulo:"Determinantes",
+    Conteudo:[
+      {
+      name:"Determinantes",
+      id:"Determinantes",
+      videos:[
+        {
+          name:"Professor Paulo Pereira: ORDENS 1, 2 E 3 (REGRA DE SARRUS)",
+          acessKey:"XaZZNxj26qU",
+        },
+        {
+          name:"Professor Paulo Pereira: O TEOREMA DE LAPLACE",
+          acessKey:"726AOpEEXrw",
+        },
+        {
+          name:"Professor Paulo Pereira: PROPRIEDADES",
+          acessKey:"939xOYVcJ2I",
+        },
+        {
+          name:"Professor Paulo Pereira: TEOREMA DE JACOB",
+          acessKey:"3DinmEi5ygQ",
+        },
+        {
+          name:"Professor Paulo Pereira: REGRA DE CHIÓ",
+          acessKey:"hKf9KktbvDI",
+        },
+        {
+          name:"Professor Paulo Pereira: DETERMINANTE DE VANDERMONDE",
+          acessKey:"iv8YNa_jXMQ",
+        },
+      ]
+    }
+   ]
+  }
+  const SistemasLineares = {
+    Subtitulo:"Sistemas Lineares",
+    Conteudo:[
+      {
+      name:"Sistemas Lineares",
+      id:"Sistemas_Lineares",
+      videos:[
+        {
+          name:"Professor Paulo Pereira: CONCEITOS BÁSICOS ",
+          acessKey:"mw0mEZ4DBsk",
+        },
+        {
+          name:"Professor Paulo Pereira: SISTEMAS 2x2 - RESOLUÇÃO (SUBSTITUIÇÃO, ADIÇÃO E COMPARAÇÃO)",
+          acessKey:"uah0mHwCKps",
+        },
+        {
+          name:"Professor Paulo Pereira: ESCALONAMENTO (SISTEMAS 3X3)",
+          acessKey:"40LjiTXFuyY",
+        },
+        {
+          name:"Professor Paulo Pereira:  REGRA DE CRAMER (SISTEMAS 3X3)",
+          acessKey:"-tdj_vMekdg",
+        },
+        {
+          name:"Professor Paulo Pereira: DISCUSSÃO E CLASSIFICAÇÃO DE UM SISTEMA",
+          acessKey:"s958ELGm2ps",
+        },
+        {
+          name:"Professor Paulo Pereira: DISCUSSÃO DE UM SISTEMA (3X3)",
+          acessKey:"szDVO_TzWLM",
+        },
+      ]
+    }
+   ]
+  }
+  const Aulas = [ProgressaoAritmetica, ProgressaoGeometrica, Matrizes, Determinantes, SistemasLineares];
   const back = '/Disciplinas/Matematica/SequenciasMatrizesDeterminantesESistemas'
   return (
     <div>
