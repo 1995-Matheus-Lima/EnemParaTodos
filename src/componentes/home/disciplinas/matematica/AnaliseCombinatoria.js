@@ -138,7 +138,7 @@ const AnaliseCombinatoria = () => {
    ]
   }
   const Aulas = [AnaliseCombinatoriaAulas, BinomioDeNewton, Probabilidade];
-  const back = '/Disciplinas/Matematica/AnaliseCombinatoria'
+  const back = '/Disciplinas/matematica/AnaliseCombinatoria'
   return (
     <div>
       <Link to="/Disciplinas/Matematica/AnaliseCombinatoria">

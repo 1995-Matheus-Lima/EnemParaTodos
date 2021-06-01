@@ -1,5 +1,5 @@
 import React from 'react'
-import LinksExternosHome from './LinksExternosHome'
+import LinksExternosHome from '../LinksExternosHome'
 
 const ConhecimentoDeMundo = () => {
   const elementos = [

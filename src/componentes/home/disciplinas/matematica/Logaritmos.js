@@ -238,7 +238,7 @@ const Logaritmos = () => {
   
   
   const Aulas = [PotenciasERaizes, funcaoExponencial, Logaritmos ];
-  const back = '/Disciplinas/Matematica/Logaritmos'
+  const back = '/Disciplinas/matematica/Logaritmos'
   return (
     <div>
       <Link to="/Disciplinas/Matematica/Logaritmos">

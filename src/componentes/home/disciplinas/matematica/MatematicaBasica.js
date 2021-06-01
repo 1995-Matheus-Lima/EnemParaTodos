@@ -534,7 +534,7 @@ const MatematicaBasica = () => {
     ]
   }
   const Aulas = [Algebra,Geometria];
-  const back = '/Disciplinas/Matematica/MatematicaBasica'
+  const back = '/Disciplinas/matematica/MatematicaBasica'
   return (
     <div>
       <Link to="/Disciplinas/Matematica/MatematicaBasica">

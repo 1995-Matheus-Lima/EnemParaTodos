@@ -14,7 +14,7 @@ const Matematica = () => {
   title.innerText = 'E.P.T | MATEMÁTICA'
   const materias = [
     {
-      nome:"Matematica Básica",
+      nome:"matematica Básica",
       id:"MatematicaBasica"
     },
     {

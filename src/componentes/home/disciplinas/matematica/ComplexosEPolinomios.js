@@ -136,7 +136,7 @@ const ComplexosEPolinomios = () => {
   }
 
   const Aulas = [Complexos, Polinomios];
-  const back = '/Disciplinas/Matematica/ComplexosEPolinomios'
+  const back = '/Disciplinas/matematica/ComplexosEPolinomios'
   return (
     <div>
       <Link to="/Disciplinas/Matematica/ComplexosEPolinomios">

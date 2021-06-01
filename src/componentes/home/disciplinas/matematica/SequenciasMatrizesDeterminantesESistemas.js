@@ -192,7 +192,7 @@ const SequenciasMatrizesDeterminantesESistemas = () => {
    ]
   }
   const Aulas = [ProgressaoAritmetica, ProgressaoGeometrica, Matrizes, Determinantes, SistemasLineares];
-  const back = '/Disciplinas/Matematica/SequenciasMatrizesDeterminantesESistemas'
+  const back = '/Disciplinas/matematica/SequenciasMatrizesDeterminantesESistemas'
   return (
     <div>
       <Link to="/Disciplinas/Matematica/SequenciasMatrizesDeterminantesESistemas">

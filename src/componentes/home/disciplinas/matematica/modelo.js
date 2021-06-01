@@ -41,7 +41,7 @@ const Funcoes = () => {
   }
  
   const Aulas = [teste];
-  const back = '/Disciplinas/Matematica/Funcoes'
+  const back = '/Disciplinas/matematica/Funcoes'
   return (
     <div>
       <Link to="/Disciplinas/Matematica/Funcoes">

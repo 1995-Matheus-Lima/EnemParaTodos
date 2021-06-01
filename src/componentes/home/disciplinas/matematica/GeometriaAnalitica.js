@@ -423,7 +423,7 @@ const GeometriaAnalitica = () => {
   }
 
   const Aulas = [CoordenadasNoPlano, EquacaoDaReta, TeoremaAngular, Circunferencia, Conicas];
-  const back = '/Disciplinas/Matematica/GeometriaAnalitica'
+  const back = '/Disciplinas/matematica/GeometriaAnalitica'
   return (
     <div>
       <Link to="/Disciplinas/Matematica/GeometriaAnalitica">

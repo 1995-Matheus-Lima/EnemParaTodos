@@ -418,7 +418,7 @@ const Trigonometria = () => {
     ]
   }
   const Aulas = [ ArcoseAngulos, FuncoesCirculares, RelacaoFundamental, ReducaoAoPrimeiroQuadrante, Transformacoes, EquacoesTrigonometricas, InequacoesTrigonometricas, TrianguloRetangulo, TriangulosQuaisquer ];
-  const back = '/Disciplinas/Matematica/Trigonometria'
+  const back = '/Disciplinas/matematica/Trigonometria'
   return (
     <div>
       <Link to="/Disciplinas/Matematica/Trigonometria">

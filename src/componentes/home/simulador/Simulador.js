@@ -1,7 +1,7 @@
 import React from 'react'
-import '../index.css'
+import '../../../index.css'
 
-const Calculator = () => {
+const Simulador = () => {
   const [naturezas, setNarutezas] = React.useState(0)
   const [humanas, setHumanas] = React.useState(0)
   const [linguagem, setLinguagem] = React.useState(0)
@@ -102,11 +102,11 @@ const Calculator = () => {
               <tr className="tabelaClaro">
                 <td>Ciências Humanas e suas Tecnologias</td>
                 <td><input type="number" step="0.01" value ={humanas}  onFocus={(event)=>{event.target.select()}} onChange={(event)=>{handleChange(event.target, setHumanas)}} required/></td>
-                <td><input type="number" value={pesos[1]} onFocus={(event)=>{event.target.select()}}  onChange={(event) => {setPesosInput(event.target,1)}}required/></td>
+                <td><input type="number" value={pesos[1]} onFocus={(event)=>{event.target.select()}} onChange={(event) => {setPesosInput(event.target,1)}}required/></td>
               </tr>
               <tr className="tabelaEscuro">
                 <td>Linguagens, Códigos e suas Tecnologias</td>
-                <td><input type="number" step="0.01"value ={linguagem}  onFocus={(event)=>{event.target.select()}}  onChange={(event)=>{handleChange(event.target, setLinguagem)}} required/></td>
+                <td><input type="number" step="0.01"value ={linguagem}  onFocus={(event)=>{event.target.select()}} onChange={(event)=>{handleChange(event.target, setLinguagem)}} required/></td>
                 <td><input type="number" value={pesos[2]} onFocus={(event)=>{event.target.select()}} onChange={(event) => {setPesosInput(event.target,2)}} required/></td>
               </tr>
               <tr className="tabelaClaro">
@@ -130,4 +130,4 @@ const Calculator = () => {
   )
 }
 
-export default Calculator
+export default Simulador

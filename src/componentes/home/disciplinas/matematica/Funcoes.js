@@ -675,7 +675,7 @@ const Funcoes = () => {
   }
   
   const Aulas = [Conjuntos, ConjuntosNumericos, Relacoes, Funcoes, Funcoes1grau, Funcoes2grau, FuncaosModulares, OutrasFuncoes];
-  const back = '/Disciplinas/Matematica/Funcoes'
+  const back = '/Disciplinas/matematica/Funcoes'
   return (
     <div>
       <Link to="/Disciplinas/Matematica/Funcoes">
