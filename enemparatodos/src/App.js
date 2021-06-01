@@ -1,11 +1,11 @@
 import React from 'react'
-import Footer from './componentes/Footer';
-import Header from './componentes/Header';
+import Footer from './componentes/home/footer/Footer';
+import Header from './componentes/home/header/Header';
 import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './componentes/Home';
-import PaginaNaoEncontrada from './componentes/PaginaNaoEncontrada';
-import Matematica from './componentes/Matematica/Matematica';
+import Home from './componentes/home/Home';
+import PaginaNaoEncontrada from './componentes/fallback/PaginaNaoEncontrada';
+import Matematica from './componentes/home/disciplinas/matematica/Matematica';
 
 
 const App = () => {
