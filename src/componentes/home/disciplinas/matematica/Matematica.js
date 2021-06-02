@@ -10,6 +10,7 @@ import AnaliseCombinatoria from './AnaliseCombinatoria'
 import ComplexosEPolinomios from './ComplexosEPolinomios'
 import GeometriaAnalitica from './GeometriaAnalitica'
 import GeometriaPlana from './GeometriaPlana'
+import GeometriaEspacial from './GeometriaEspacial'
 
 const Matematica = () => {
   const title = document.querySelector('title')
@@ -51,6 +52,10 @@ const Matematica = () => {
       nome:"Geometria Plana",
       id:"GeometriaPlana"
     },  
+    {
+      nome:"Geometria Espacial",
+      id:"GeometriaEspacial"
+    },
   ]
 
   return (
@@ -67,6 +72,7 @@ const Matematica = () => {
         <Route path='/ComplexosEPolinomios/*' element={<ComplexosEPolinomios/>}/>
         <Route path='/GeometriaAnalitica/*' element={<GeometriaAnalitica/>}/>
         <Route path='/GeometriaPlana/*' element={<GeometriaPlana/>}/>
+        <Route path='/GeometriaEspacial/*' element={<GeometriaEspacial/>}/>
       </Routes>
     </div>
   )
