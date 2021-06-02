@@ -9,6 +9,8 @@ import SequenciasMatrizesDeterminantesESistemas from './SequenciasMatrizesDeterm
 import AnaliseCombinatoria from './AnaliseCombinatoria'
 import ComplexosEPolinomios from './ComplexosEPolinomios'
 import GeometriaAnalitica from './GeometriaAnalitica'
+import GeometriaPlana from './GeometriaPlana'
+
 const Matematica = () => {
   const title = document.querySelector('title')
   title.innerText = 'E.P.T | MATEMÁTICA'
@@ -44,6 +46,10 @@ const Matematica = () => {
     {
       nome:"Geometria Analítica",
       id:"GeometriaAnalitica"
+    },
+    {
+      nome:"Geometria Plana",
+      id:"GeometriaPlana"
     },  
   ]
 
@@ -60,6 +66,7 @@ const Matematica = () => {
         <Route path='/AnaliseCombinatoria/*' element={<AnaliseCombinatoria/>}/>
         <Route path='/ComplexosEPolinomios/*' element={<ComplexosEPolinomios/>}/>
         <Route path='/GeometriaAnalitica/*' element={<GeometriaAnalitica/>}/>
+        <Route path='/GeometriaPlana/*' element={<GeometriaPlana/>}/>
       </Routes>
     </div>
   )

@@ -355,68 +355,125 @@ const GeometriaAnalitica = () => {
     Conteudo:[
       {
         name:"Elípse",
-        id:"Equacao_Reduzida_Da_Circunferencia",
+        id:"Elipse",
         videos:[
           {
-            name:"Professora Angela: EQUAÇÃO REDUZIDA DA CIRCUNFERÊNCIA",
-            acessKey:"jXWHwoBye60",
+            name:"Professor Paulo Pereira: Elipse - Cônicas",
+            acessKey:"AQV5O0Go_YE",
           },
-          
+          {
+            name:"Professor Murakami: ELIPSE - CÔNICAS ",
+            acessKey:"93u3XAiEBaE",
+          },   {
+            name:"Professor Aquino: Equação da Elipse.",
+            acessKey:"2qWc43VPDVc",
+          },
+          {
+            name:"Professor Vander: Equação da Elipse.",
+            acessKey:"mYyPYK8JMnc",
+           },
         ]
       },
       {
         name:"Hipérbole",
-        id:"Equacao_Reduzida_Da_Circunferencia",
+        id:"Hiperbole",
         videos:[
           {
-            name:"Professora Angela: EQUAÇÃO REDUZIDA DA CIRCUNFERÊNCIA",
-            acessKey:"jXWHwoBye60",
+            name:"Professor Paulo Pereira: Hipérbole - Cônicas",
+            acessKey:"9xoLazPxV6w",
           },
-          
+          {
+            name:"Professor Murakami: Hipérbole - Cônicas",
+            acessKey:"qF6q_-HsO4A",
+          },
+          {
+            name:"Professor Aquino: Equação da Hipérbole",
+            acessKey:"cws8TQF-03s",
+          },
         ]
       },
       {
         name:"Parábola",
-        id:"Equacao_Reduzida_Da_Circunferencia",
+        id:"Parabola",
         videos:[
           {
-            name:"Professora Angela: EQUAÇÃO REDUZIDA DA CIRCUNFERÊNCIA",
-            acessKey:"jXWHwoBye60",
+            name:"Professor Paulo Pereira: PARÁBOLA - CÔNICAS",
+            acessKey:"mCcmt5RyfNI",
           },
-          
+          {
+            name:"Professor Murakami: Hipérbole - Cônicas",
+            acessKey:"gV2ZoAic6-w",
+          },
+          {
+            name:"Professor Aquino: Equação da Parábola",
+            acessKey:"6wY1b1ryTOA",
+          },
         ]
       },
       {
         name:"Reconhecimento de uma cônica",
-        id:"Equacao_Reduzida_Da_Circunferencia",
+        id:"Reconhecimento_De_Uma_Conica",
         videos:[
           {
-            name:"Professora Angela: EQUAÇÃO REDUZIDA DA CIRCUNFERÊNCIA",
-            acessKey:"jXWHwoBye60",
+            name:"Sacando matemática: CÔNICAS EQUAÇÃO GERAL COMO IDENTIFICAR SE É ELIPSE, HIPÉRBOLE OU PARÁBOLA",
+            acessKey:"w6guNE-ci0E",
           },
-          
+          {
+            name:"Khan Academy Brasil: Identificando Cônicas 1",
+            acessKey:"3plvwG19Y8k",
+          },
+          {
+            name:"Khan Academy Brasil: Identificando Cônicas 2",
+            acessKey:"mfQm-rPGYt0",
+          },
         ]
       },
       {
         name:"Intersecção de cônicas",
-        id:"Equacao_Reduzida_Da_Circunferencia",
+        id:"Interseccao_De_Conicas",
         videos:[
           {
-            name:"Professora Angela: EQUAÇÃO REDUZIDA DA CIRCUNFERÊNCIA",
-            acessKey:"jXWHwoBye60",
+            name:"Kuadro Oficial: Intersecção de cônicas - Parábola e Reta",
+            acessKey:"p5sk7gWMp1I",
           },
-          
+          {
+            name:"Kuadro Oficial: Intersecção de cônicas - Elipse e parábola",
+            acessKey:"UHlkhbCM9bI",
+          },
+          {
+            name:"Kuadro Oficial: Intersecção de cônicas - Circunferência e hipérbole",
+            acessKey:"xnutIVkTNdM",
+          },
+          {
+            name:"Professor Remo Noronha: Interseções entre cônicas",
+            acessKey:"RLHOJM0LVK4",
+          },
         ]
       },
       {
         name:"Tangentes a uma cônica",
-        id:"Equacao_Reduzida_Da_Circunferencia",
+        id:"Tangentes_A_Uma_Conica",
         videos:[
           {
-            name:"Professora Angela: EQUAÇÃO REDUZIDA DA CIRCUNFERÊNCIA",
-            acessKey:"jXWHwoBye60",
+            name:"Kuadro Oficial: Tangentes à uma cônica - Elipse",
+            acessKey:"Coq0pE-Nq8Q",
           },
-          
+          {
+            name:"Kuadro Oficial: Tangentes à uma cônica - Hipérbole",
+            acessKey:"5W57n3NAU78",
+          },
+          {
+            name:"Kuadro Oficial: Intersecção de cônicas - Tangentes a uma cônica - Parábola",
+            acessKey:"--n5BjW5a5g",
+          },
+          {
+            name:"Fábrica D: ENEM, VESTIBULARES E IME-ITA.: GEOMETRIA ANALÍTICA - RETA TANGENTE À QUALQUER CÔNICA",
+            acessKey:"fJcoviqsgaU",
+          },
+          {
+            name:"A Hora do bizu: BIZU MASTER de Retas tangentes a cônicas",
+            acessKey:"TkT7KZpNVgM",
+          },
         ]
       },
     ]
