@@ -5,7 +5,7 @@ import ShowAulas from '../ShowAulas';
 import ShowVideos from '../ShowVideos';
 
 
-const GeometriaEspacial = () => {
+const MatematicaFinanceira = () => {
   const [Videos, setVideos] = React.useState(null);
  
  
@@ -282,11 +282,11 @@ const GeometriaEspacial = () => {
   }
 
   const Aulas = [Introducao, Paralelismo, Diedros, Triedros, Poliedros, Troncos, Inscricao];
-  const back = '/Disciplinas/matematica/GeometriaEspacial'
+  const back = '/Disciplinas/matematica/MatematicaFinanceira'
   return (
     <div>
-      <Link to="/Disciplinas/Matematica/GeometriaEspacial">
-        <h2 className="h2ShowAula">Geometria Espacial</h2>
+      <Link to="/Disciplinas/Matematica/MatematicaFinanceira">
+        <h2 className="h2ShowAula">Matematica Financeira</h2>
       </Link>
       <Routes>
        <Route path='' element={<ShowAulas back ={back} Aulas = {Aulas} setVideos = {setVideos}/>}/>
@@ -296,4 +296,4 @@ const GeometriaEspacial = () => {
   )
 }
 
-export default GeometriaEspacial;
+export default MatematicaFinanceira;
